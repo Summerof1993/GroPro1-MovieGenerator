@@ -1,0 +1,6 @@
+.headerlogo h3 {margin-top: -5px;}
+/*make navbar text inline*/
+.navbar h3,
+form {
+    display:inline;
+}

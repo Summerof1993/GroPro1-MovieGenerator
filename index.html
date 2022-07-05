@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Movie Night Generator</title>
+    <!--Custom CSS-->
+    <link rel = "stylesheet" href = "assets/style.css">
+</head>
+<body>
+    <main>
+        <header>
+
+            <div class="headerlogo">
+            <h1>Movie Night Generator</h1>
+            <!--add logo-->
+            </div>
+
+            <h3>Leave the decision making to us.</h3>
+
+        </header>
+
+        <nav>
+            <!--user input-->
+            <div class="navbar">
+            <section class="start-ui">
+                <h3>
+                    What's your name?
+                </h3>
+                <!--form for nav bar-->
+                <form>
+                    <input type="text" placeholder="Enter your name here" id="user-name" required>
+                    <h3>What type of movie are you in the mood for?</h3>
+                    <div class="movie-type">
+                        <select name="genre" id="genre" required>
+                            <option disabled selected value> Select a genre</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Action">Action</option>
+                            <option value="Animated">Animated</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="History">History</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Sci fi">Sci-Fi</option>
+                        </select>
+                        <input id="sbmt-btn" value="Lets go!" type="submit">
+                    </div>
+                </div>
+                </form>
+            </section>
+        </nav>
+        <!--Input return section-->
+        <section class="return-ui">
+            <div class="display-movie">
+                <div class="movie-elem">
+                    <h3><span id="name-val"></span>, here's the <span id="genre-val"></span> movie you're looking for!</h3>
+                </div>
+
+                <div class="display-movie display-info">
+                    <!--Movie info is shown here-->
+                </div>
+                <div class="display-movie watch-list">
+                    <!--display local storage here-->
+                    <h3>
+                        Watch list
+                    </h3>
+                </div>
+                <div class="display-movie youtube-vid">
+                    <h3>
+                        Youtube Videos
+                    </h3>
+                    <!--display youtube video here-->
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button class="change-genre btn">Change Genre</button>
+                <button class="retry btn">Try Again!</button>
+            </div>
+        </section>
+
+        <footer>
+            Made by Team #8
+        </footer>
+
+    </main>
+   <!--js file --> 
+   <script src="./assets/script.js"></script>
+</body>
+</html>
