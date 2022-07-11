@@ -86,11 +86,12 @@ function showMovie(movie) {
             <h3>${movie.title}</h3>
             <p><strong>Rating:</strong> ${movie.vote_average} </p>
             <p><strong>Year:</strong> ${getYear(movie.release_date)} </p>
-            <p class="overview" tabindex="0" role="document">${
-              movie.overview
-            }</p>
+            <p class="overview" tabindex="0" role="document">
+            ${movie.overview}</p>
+            
         </div>
     `;
+  console.log(movie.title);
 }
 
 function getYear(date) {
@@ -136,6 +137,7 @@ function assignID() {
     genreID = 878;
   }
 }
+
 function displayReturnUI() {
   //   nameValue.textContent = nameInput.value;
   //   document.querySelector("#genre-val").textContent = genreInput.value;
